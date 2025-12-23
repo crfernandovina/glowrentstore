@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Rent Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+</head>
+
+<body>
+    <!-- TOP -->
+    <section class="top">   
+        
+        <div class="top-whatsapp">
+            <a href="https://wa.me/59899440102" target="_blank" class="whatsapp-link">
+                <!-- Icono WhatsApp SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+                    <path d="M20.52 3.48A11.84 11.84 0 0012 .5C5.65.5.5 5.65.5 12a11.7 11.7 0 001.68 6L.5 24l6.57-1.68A11.84 11.84 0 0012 23.5c6.35 0 11.5-5.15 11.5-11.5 0-3.06-1.19-5.95-3.48-8.52zm-8.52 18c-2.33 0-4.55-.76-6.35-2.02l-.45-.32-3.9 1 1-3.9-.32-.45A9.01 9.01 0 013 12c0-4.97 4.03-9 9-9s9 4.03 9 9-4.03 9-9 9zm5.25-6.25c-.28-.14-1.65-.82-1.9-.91-.25-.09-.43-.14-.61.14-.18.28-.71.91-.87 1.1-.16.18-.31.2-.59.07-.28-.14-1.17-.43-2.23-1.38-.82-.73-1.37-1.63-1.53-1.91-.16-.28-.02-.43.12-.57.12-.12.28-.31.42-.46.14-.16.19-.28.28-.47.09-.18.05-.35-.02-.49-.07-.14-.61-1.47-.84-2.02-.22-.53-.45-.46-.61-.47-.16 0-.35-.01-.53-.01s-.49.07-.75.35c-.25.28-.96.94-.96 2.29 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.94 4.68 4.13 3.28 1.37 3.28.91 3.87.85.59-.07 1.91-.78 2.18-1.53.28-.74.28-1.37.19-1.5-.09-.14-.25-.22-.53-.35z"/>
+                </svg>
+                <span> 099 44 01 02</span>
+            </a>
+        </div>
+        
+        <div class="top-direccion">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="var(--carbon)" style="margin-right:5px;">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+            </svg>
+            <span>Av. Gral. Rivera 4265 - Local 102, Montevideo</span>
+        </div>
+
+        <div>
+            <p>Lunes a Sábado de 12:00 a 20:00</p>
+        </div>
+    </section>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="container-header">
+            <a href="../index.html">
+                <img src="../img/logo_glow.png" alt="Glow Rent Store" class="logo">
+            </a>
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./como_alquilar.html">¿Cómo alquilar?</a></li>
+                    <li><a href="./ayuda.html">Ayuda</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+    
+    <!-- Banner título de la página -->
+    <section class="titulo-pagina">
+        <h1>Contacto</h1>
+        <h2>Estamos para ayudarte</h2>
+    </section>
+    
+   <!-- CONTACTO - CONTENEDOR PRINCIPAL -->
+    <section class="contacto-container">
+        
+        <!-- FORMULARIO -->
+        <div class="contacto-card">
+            
+            <div class="contacto-formulario">
+
+                <h3>Formulario de Contacto</h3>
+                <p class="contacto-intro">
+                    Si tenés dudas sobre alquileres, reservas o disponibilidad, completá el formulario
+                    y te responderemos a la brevedad.
+                </p>
+
+                <form action="#" method="POST" class="formulario-contacto">
+                    
+                    <label for="nombre">Nombre completo *</label>
+                    <input id="nombre" type="text" name="nombre" required>
+
+                    <label for="email">Email *</label>
+                    <input id="email" type="email" name="email" required>
+
+                    <label for="telefono">Teléfono *</label>
+                    <input id="telefono" type="tel" name="telefono" required>
+
+                    <label for="motivo">Motivo de la consulta *</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccioná una opción</option>
+                        <option value="consulta-general">Consulta general</option>
+                        <option value="disponibilidad">Disponibilidad de un vestido</option>
+                        <option value="cambios">Cambios / cancelaciones</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <div class="contacto-card">
+            <div class="contacto-info">
+
+                <h3>Información de Contacto</h3>
+
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <strong>Dirección</strong><br>
+                        Av. Gral. Rivera 4265 — Local 102<br>
+                        Montevideo, Uruguay
+                        <br>CP 11400
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">🕒</span>
+                    <div>
+                        <strong>Horarios</strong><br>
+                        Lunes a Viernes: 12:00 a 20:00 horas<br>
+                        Sábados: 12:00 a 16:00 horas
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">📱</span>
+                    <div>
+                        <strong>Teléfono</strong><br>
+                        <a href="https://wa.me/59899440102" target="_blank" class="whatsapp-info">
+                            099 44 01 02
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <strong>Email</strong><br>
+                        hola@glowrentstore.com
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">📸</span>
+                    <div>
+                        <strong>Instagram</strong><br>
+                        <a href="https://instagram.com/rentstoreglow" target="_blank">
+                            @rentstoreglow
+                        </a>
+                    </div>
+                </div>
+
+                <div id="mapa"></div>
+
+
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="../index.html"  aria-label="Volver al inicio">
+        <img src="../img/logo_glow.png" alt="Logo de Glow Rent Store">
+        </a>
+        <address>
+            <p>Instagram: @rentstoreglow | WhatsApp: 099 44 01 02</p>
+            <p>Av. Gral. Rivera 4265 Local 102 — Montevideo</p>
+        </address>
+        <p>Horario: Lunes a Sábados de 12:00 a 20:00</p>
+        <p>&copy; 2025 Glow Rent Store</p>
+    </footer>
+
+</main>
+    
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const lat = -34.8958;
+        const lng = -56.1213;
+
+        // Crear mapa
+        const map = L.map('mapa').setView([lat, lng], 16);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Crear ícono con el logo
+        const customIcon = L.icon({
+            iconUrl: '../img/logo_glow.png',
+            iconSize: [70,45],
+            iconAnchor: [25, 50], // punto que apunta a la ubicación
+            popupAnchor: [0, -50]
+        });
+
+        // Añadir marcador con ícono personalizado
+        const marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
+
+        marker.bindPopup(`
+            <div style="text-align:center;">
+                <h4>Glow Rent Store</h4>
+                <p>Av. Gral Rivera 4265 Local 102<br>Montevideo</p>
+            </div>
+        `).openPopup();
+    </script>
+
+</body>
+</html>

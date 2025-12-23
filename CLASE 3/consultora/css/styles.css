@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* ----------Header-------- */
+
+header{
+    background-color: rgb(154, 201, 147);
+}
+
+
+
+nav ul li a{
+    font-size: 20px;
+}
+
+/* -------Hero Section -----------*/
+
+
+.hero-section a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* --------Services Section---------- */
+
+.services-section{
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.services-section h2{
+    font-size: 36px;
+}
+
+.service-card{
+    text-align: center;
+}
+
+.service-card h3{
+    color: #2d7a2d;
+}
+
+
+
+/*----------- Testimonials Section---------- */
+
+.testimonials-section{
+    text-align: center;
+}
+
+.testimonials-section h2{
+    font-size: 36px;
+}
+
+
+.testimonial-card{
+    text-align: center;
+}
+
+
+.testimonial-card span{
+    color: #2d7a2d;
+}
+
+/* -----------Team Section -----------*/
+
+.team-section{
+    text-align: center;
+}
+
+.team-section h2{
+    font-size: 36px;
+    color: #333;
+}
+
+.team-member{
+    text-align: center;
+}
+
+.team-member h3{
+    color: #2d7a2d;
+}
+
+/*---------- Footer ------------*/
+
+footer{
+    background-color: #222;
+    color: #fff;
+}
+
+
+.footer-links a, .footer-social a{
+    color: #fff;
+}

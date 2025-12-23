@@ -1,0 +1,31 @@
+h1{
+    color: red;
+    background-color: green;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.texto-dos{
+    color: blue;
+
+/* acá comienza la sección del header */
+
+}
+#colorfondo-rojo{
+    background-color: red;
+}
+
+.card{
+    background-color: rgb(36, 82, 5);
+    color: rgb(175, 137, 137);
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+    background-color: rgb(35, 219, 15);
+}
+
+.texto-rojo-card{
+    color: red;
+}
